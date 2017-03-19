@@ -60,13 +60,15 @@ typedef struct {
     }
 int main()
 {
+    printf("//////////");
+    printf("\n");
     int vet[5] = {4, 1, 3, 5, 2},i;
    bubleSort((void *)vet, sizeof(int), 5, compare);
    for(i=0;i<sizeof(vet)/sizeof(int);i++){
     printf("%d\n",vet[i]);
 
    }
-      printf("end");
+      printf("end\n");
    double ket[5]={4.0,1.0,3.0,5.0,2.0};
     bubleSort((void *)ket, sizeof(double), 5, compareDouble);
     for(i=0;i<sizeof(ket)/sizeof(double);i++){
@@ -75,7 +77,7 @@ int main()
    }
 
 
-   printf("end");
+   printf("end\n");
 
    point coords[5]; coords[0].x = 9; coords[1].x = 12; coords[2].x = 122; coords[3].x = 10;
    coords[4].x=33;
@@ -83,5 +85,5 @@ int main()
 	for (i = 0; i < sizeof(coords) / sizeof(point); i++){
         printf("%d\n",coords[i]);
 	}
-		printf("end");
+		printf("end\n");
 }
